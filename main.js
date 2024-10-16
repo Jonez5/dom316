@@ -58,7 +58,7 @@ topMenuEl.addEventListener("click", (event) =>{
   }
   function buildSubmenu(arrr) {
     while (SubMenuEl.firstChild) {
-      SubMenuEl.removeChild(firstChild)
+      SubMenuEl.removeChild(SubMenuEl.firstChild)
     }
     for (let n = 0; n < arrr.length; n++) {
       let a = document.createElement("a")
